@@ -24,7 +24,7 @@ describe('Playstore API', () => {
                     let i = 0;
                     let sorted = true;
                     while (sorted && i < res.body.length - 1){
-                        sorted = sorted && res.body[i].Rating >= res.body[i + 1].Rating
+                        sorted = sorted && res.body[i].Rating <= res.body[i + 1].Rating
                         i++;
                     }
                     
